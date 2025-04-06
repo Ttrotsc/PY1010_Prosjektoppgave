@@ -1,6 +1,7 @@
 # Hva gjør programmet
 
-Support dashboard er et program som henter ut nøkkeltall fra supporthenvendelser lagret i et excelark
+Support dashboard er et program som henter ut nøkkeltall fra supporthenvendelser lagret i et excelark.
+
 Programmet er skrevet i Jupityr notebook og importerer data fra excelarket og konvertere data til arrays.
 
 Eksempel på bruk:
