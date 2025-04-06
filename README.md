@@ -1,6 +1,18 @@
-# PY1010_Prosjektoppgave
-Dette repoet inneholder filer som tilhører innlevering av PY1010 prosjektoppgave
+# Hva gjør programmet
 
-Oppgaven er skrevet i Jupyter og består av en notebook med navn Prosjektoppgave_py1010_Turid og det tilhørende excelarket support_uke_24
+Support dashboard er et program som henter ut nøkkeltall fra supporthenvendelser lagret i et excelark
+Programmet er skrevet i Jupityr notebook og importerer data fra excelarket og konvertere data til arrays.
 
-Det er ulike oppgaver som er besvart gjennom å legge til markdowns for å beskrive hva kodecellen gjør og kode er lagt til i kodeceller med kommentering
+Eksempel på bruk:
+```py
+# Leser inn Excel-filen
+kundebase = pd.read_excel('support_uke_24.xlsx', sheet_name = "Morse")
+
+#Viser kolonnenavn og første radene i excelarket for å se hva den inneholder
+print(kundebase.head())
+
+#konverterer så inn de ulike kolonnene som arrays med nye navn
+u_dag = kundebase ['Ukedag'].values
+kl_slett = kundebase ['Klokkeslett'].values
+varighet = kundebase ['Varighet'].values
+score = kundebase ['Tilfredshet'].values
