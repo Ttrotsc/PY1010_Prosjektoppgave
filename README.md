@@ -2,7 +2,7 @@
 
 Support dashboard er et program som henter ut nøkkeltall fra supporthenvendelser lagret i et excelark.
 
-Programmet er skrevet i Jupityr notebook og importerer data fra excelarket og konvertere data til arrays.
+Programmet er skrevet i Jupityr notebook og importerer data fra excelarket og konvertere data til arrays, for deretter å gjøre en rekke ulike beregninger.
 
 Eksempel på bruk:
 ```py
